@@ -21,12 +21,9 @@
     <nav class="navbar navbar-dark es-navbar es-bg-dark" id="mainNavbar">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img alt="" class="main-logo" src="img/logo.svg">
+          <img alt="" class="main-logo" src="img/logo.png">
         </a>
         <ul class="navbar-nav sm-hide es-nav-pages mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Партнерам</a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Контакты</a>
           </li>
@@ -34,19 +31,43 @@
             <a class="nav-link" href="#">Команда в UD</a>
           </li>
         </ul>
-        <div class="es-navbar-right sm-hide">
-          <div class="dropdown mr-5">
-            <button class="btn dropdown-toggle es-language-dropdown" type="button" id="languageDropdown"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Рус
-            </button>
-            <div class="dropdown-menu es-dropdown-menu" aria-labelledby="languageDropdown">
-              <a class="dropdown-item active" href="#">Рус</a>
-              <a class="dropdown-item" href="#">O'zb</a>
-              <a class="dropdown-item" href="#">Eng</a>
-            </div>
-          </div>
-          <button class="btn es-btn-light">Заказать товары</button>
+        <div class="es-header-right">
+          <nav class="navbar-expand-lg">
+            <ul class="navbar-nav navbar-icons sm-hide">
+              <li class="nav-item dropdown ml-auto">
+                <button class="btn dropdown-toggle es-language-dropdown" type="button" id="languageDropdown"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Рус
+                </button>
+                <div class="dropdown-menu es-dropdown-menu" aria-labelledby="languageDropdown">
+                  <a class="dropdown-item active" href="#">Рус</a>
+                  <a class="dropdown-item" href="#">O'zb</a>
+                  <a class="dropdown-item" href="#">Eng</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img src="img/ic_search.svg" alt="">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <img src="img/ic_heart.svg" alt="">
+                </a>
+              </li>
+              <li class="nav-item position-relative">
+                <a href="#" class="nav-link">
+                  <img src="img/ic_cart.svg" alt="">
+                  <span class="badge badge-cart">1</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link" data-toggle="modal" data-target="#authModal">
+                  <img src="img/ic_profile.svg" alt="">
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
         <div class="es-mob-nav">
           <div class="dropdown es-lang-dropdown">
@@ -60,7 +81,13 @@
               <a class="dropdown-item" href="#">Eng</a>
             </div>
           </div>
-          <button class="btn es-hamburger" data-target="#aboutMenuModal" data-toggle="modal">
+          <a class="es-search" href="#">
+            <img alt="" src="/img/ic_search.svg">
+          </a>
+          <a class="es-favorites" href="#">
+            <img alt="" src="/img/ic_heart.svg">
+          </a>
+          <button class="btn es-hamburger" data-target="#menuModal" data-toggle="modal">
             <img alt="Menu" src="/img/ic_hamburger.svg">
           </button>
         </div>
@@ -74,8 +101,7 @@
           <div class="row">
             <div class="col-md-6">
               <div class="es-comp-main-content">
-                <h1 class="ec-page-title">United <br>
-                  Distribution</h1>
+                <h1 class="ec-page-title">Boy Toys</h1>
                 <div class="ec-page-desc">Успешная компания в сфере дистрибуции товаров народного потребления
                   с 1998 года.</div>
               </div>
@@ -88,7 +114,7 @@
         </div>
       </div>
     </section>
-    <section class="es-about-section">
+    <!-- <section class="es-about-section">
       <div class="es-page-row">
         <div class="container">
           <div class="es-about-wrapper">
@@ -419,12 +445,12 @@
       <div class="es-mob-comp-img">
         <img src="img/main_bg_img.png" alt="">
       </div>
-    </section>
+    </section> -->
     <footer>
       <div class="container">
         <div class="es-footer-container">
           <div class="es-footer-group">
-            <img class="footer-logo" src="img/logo.svg" alt="">
+            <img class="footer-logo" src="img/logo.png" alt="">
             <div class="es-footer-info">
               <div class="es-footer-ic">
                 <img src="img/ic_location.svg" alt="">
@@ -452,7 +478,7 @@
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  Команда в UD
+                  Команда в BT
                 </a>
               </li>
               <li class="nav-item">
@@ -485,7 +511,7 @@
           </div>
         </div>
         <div class="es-footer-bottom">
-          <div class="es-footer-copyright">2023 © UDcompany.uz</div>
+          <div class="es-footer-copyright">2023 © BoyToys.uz</div>
           <div class="es-footer-developer">Сайт разработан в <a href="https://zetta.uz">Zetta Online</a>
           </div>
         </div>

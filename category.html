@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header fixed-top">
     <nav class="es-navbar">
       <div class="container">
         <div class="es-header">
@@ -28,7 +28,7 @@
           </div>
           <div class="es-header-center">
             <a href="#" class="navbar-brand es-logo">
-              <img src="img/logo.svg" alt="">
+              <img src="img/logo.png" alt="">
             </a>
           </div>
           <div class="es-header-right">
@@ -245,6 +245,99 @@
       </div>
     </nav>
     <section class="es-page-section">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb es-breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Корзина</li>
+          </ol>
+        </nav>
+        <h1 class="es-page-title">Фильтр товаров</h1>
+        <div class="es-products-list es-favorites-list">
+          <div class="es-product-wrapper">
+            <div class="es-product-item">
+              <div class="es-product-img">
+                <a href="#">
+                  <img src="img/product1.jpg" class="img-fluid" alt="">
+                  <button class="btn es-product-like">
+                    <img src="img/ic_pr-like-full.svg" alt="">
+                  </button>
+                </a>
+              </div>
+              <div class="es-product-title">
+                <a href="#">PHILIP KINGSLEY</a>
+              </div>
+              <div class="es-product-info">
+                Масло для укрепления и восстановления волос
+              </div>
+              <div class="es-product-rate">
+                <img src="img/ic_star.svg" alt="">&nbsp;
+                4.5&nbsp;
+                <a href="#" class="es-text-blue">(15 отзывов)</a>
+              </div>
+              <div class="es-product-options">
+                <div class="es-pruduct-price">
+                  <div class="es-curr-price">250 000 сум</div>
+                </div>
+                <div class="es-product-controls">
+                  <button class="btn btn-counter btn-minus" data-action="minus-quantity">-</button>
+                  <span class="es-product-quantity">1</span>
+                  <button class="btn btn-counter btn-plus" data-action="plus-quantity">+</button>
+                </div>
+                <button class="btn btn-cart d-none" data-action="add-to-cart">
+                  <img src="img/ic_cart.svg">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="es-product-wrapper">
+            <div class="es-product-item">
+              <div class="es-product-flag">
+                new
+              </div>
+              <div class="es-product-img">
+                <a href="#">
+                  <img src="img/product2.jpg" class="img-fluid" alt="">
+                  <button class="btn es-product-like">
+                    <img class="d-none" src="img/ic_pr-like.svg" alt="">
+                    <img src="img/ic_pr-like-full.svg" alt="">
+                  </button>
+                </a>
+              </div>
+              <div class="es-product-title">
+                <a href="#">PHILIP KINGSLEY</a>
+              </div>
+              <div class="es-product-info">
+                Масло для укрепления и восстановления волос
+              </div>
+              <div class="es-product-rate">
+                <img src="img/ic_star.svg" alt="">&nbsp;
+                4.5&nbsp;
+                <a href="#" class="es-text-blue">(15 отзывов)</a>
+              </div>
+              <div class="es-product-options">
+                <div class="es-pruduct-price">
+                  <div class="es-curr-price">250 000 сум</div>
+                </div>
+                <div class="es-product-controls d-none">
+                  <button class="btn btn-counter btn-minus" data-action="minus-quantity">-</button>
+                  <span class="es-product-quantity">1</span>
+                  <button class="btn btn-counter btn-plus" data-action="plus-quantity">+</button>
+                </div>
+                <button class="btn btn-cart" data-action="add-to-cart">
+                  <img src="img/ic_cart.svg">
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="es-cf-left">
+          <a href="#" class="es-back-link">
+            <img src="/img/ic_back_link.svg" /> Вернуться к покупкам</a>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="es-page-section">
       <div class="container">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb es-breadcrumb">
@@ -606,12 +699,12 @@
         </div>
       </div>
 
-    </section>
+    </section> -->
     <footer>
       <div class="container">
         <div class="es-footer-container">
           <div class="es-footer-group">
-            <img class="footer-logo" src="img/logo.svg" alt="">
+            <img class="footer-logo" src="img/logo.png" alt="">
             <div class="es-footer-info">
               <div class="es-footer-ic">
                 <img src="img/ic_location.svg" alt="">
@@ -639,7 +732,7 @@
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  Команда в UD
+                  Команда в BT
                 </a>
               </li>
               <li class="nav-item">
@@ -672,7 +765,7 @@
           </div>
         </div>
         <div class="es-footer-bottom">
-          <div class="es-footer-copyright">2023 © UDcompany.uz</div>
+          <div class="es-footer-copyright">2023 © BoyToys.uz</div>
           <div class="es-footer-developer">Сайт разработан в <a href="https://zetta.uz">Zetta Online</a>
           </div>
         </div>

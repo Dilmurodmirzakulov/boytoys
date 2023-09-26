@@ -1014,4 +1014,26 @@
   .modal-logo img {
     height: 3rem;
   }
+  .form-section, .feedback-section, .products-slider {
+    padding: 50px 0;
+  }
+  .es-section-desc {
+    margin-bottom: 1rem;
+  }
+  .es-section-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .form-section .es-btn-light {
+    margin-bottom: 1rem;
+  }
+  .es-feedback-text {
+    line-height: 1rem;
+    margin-bottom: 10px;
+  }
+  .es-feedback-ic img {
+    height: 20%;
+    width: 20%;
+    margin: 0 auto 15px;
+  }
 }

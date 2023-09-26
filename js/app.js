@@ -28,6 +28,35 @@ $().ready(function () {
     ],
   });
 
+  $(".es-feedback-slick").slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    swipeToSlide: true,
+    prevArrow:
+      '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><img src="/img/ic_slider-left.svg"/></button>',
+    nextArrow:
+      '<button class="slick-next slick-arrow" aria-label="Next" type="button"><img src="/img/ic_slider-right.svg"/></button>',
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1.1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+
   $(".es-main-brands-slider").slick({
     dots: false,
     infinite: false,
