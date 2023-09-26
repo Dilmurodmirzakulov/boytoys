@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS AND FONTS -->
+  <link href="/css/bootstrap.min.css" rel="stylesheet" media="all">
+  <link href="/fonts/stylesheet.css?v=1.0.1" rel="stylesheet" media="all">
+  <link href="/css/slick.min.css?v=1.8.1" rel="stylesheet" media="all">
+  <link href="/css/style.css?v=1.0.4" rel="stylesheet" media="all">
+  <link href="/css/media.css?v=1.0.4" rel="stylesheet" media="all">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="fixed-top">
+    <nav class="navbar navbar-dark es-navbar es-bg-dark" id="mainNavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img alt="" class="main-logo" src="img/logo.svg">
+        </a>
+        <ul class="navbar-nav sm-hide es-nav-pages mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Партнерам</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Команда в UD</a>
+          </li>
+        </ul>
+        <div class="es-navbar-right sm-hide">
+          <div class="dropdown mr-5">
+            <button class="btn dropdown-toggle es-language-dropdown" type="button" id="languageDropdown"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Рус
+            </button>
+            <div class="dropdown-menu es-dropdown-menu" aria-labelledby="languageDropdown">
+              <a class="dropdown-item active" href="#">Рус</a>
+              <a class="dropdown-item" href="#">O'zb</a>
+              <a class="dropdown-item" href="#">Eng</a>
+            </div>
+          </div>
+          <button class="btn es-btn-light">Заказать товары</button>
+        </div>
+        <div class="es-mob-nav">
+          <div class="dropdown es-lang-dropdown">
+            <button class="btn dropdown-toggle es-language-dropdown" type="button" id="languageDropdown"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="img/ic_globe.svg" alt="">
+            </button>
+            <div class="dropdown-menu es-dropdown-menu" aria-labelledby="languageDropdown">
+              <a class="dropdown-item active" href="#">Рус</a>
+              <a class="dropdown-item" href="#">O'zb</a>
+              <a class="dropdown-item" href="#">Eng</a>
+            </div>
+          </div>
+          <button class="btn es-hamburger" data-target="#aboutMenuModal" data-toggle="modal">
+            <img alt="Menu" src="/img/ic_hamburger.svg">
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="es-bg-dark">
+      <div class="es-about-page-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="es-comp-main-content">
+                <h1 class="ec-team-title">Команда UD</h1>
+                <nav aria-label="breadcrumb" class="ec-breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Команда UD</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <div class="col-md-6 sm-hide"></div>
+          </div>
+        </div>
+        <div class="es-full-right-half">
+          <img src="/img/team.jpg" class="img-fluid" loading="lazy">
+        </div>
+      </div>
+    </section>
+    <section class="es-vacancies-section">
+      <div class="container">
+        <div class="es-vacancies-header">
+          <h2 class="ec-section-title">Вакансии</h2>
+          <ul class="nav nav-tabs es-vacancy-nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link es-btn-dark active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                aria-controls="home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link es-btn-dark" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                aria-controls="profile" aria-selected="false">Profile</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="es-vacancy-group">Название места</div>
+              </div>
+              <div class="col-md-7">
+                <div class="accordion" id="accordionOne">
+                  <div class="es-vacancy">
+                    <div class="card-header" id="headingOne">
+                      <div class="mb-0">
+                        <button class="btn btn-link btn-block text-left es-vacancy-btn collapsed" type="button"
+                          data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                          aria-controls="collapseOne">
+                          <span>Название должности</span>
+                          <span class="es-accordion-arrow">
+                            <img src="img/ic_dropdown_white.svg" alt="">
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionOne">
+                      <div class="card-body">
+                        <div class="vacany-info-group">
+                          <div class="es-list-title">Опыт работы</div>
+                          <ul class="es-bullet-list">
+                            <li>От 1 года до 3 лет</li>
+                            <li>Полная занятость</li>
+                            <li>Полный день</li>
+                          </ul>
+                        </div>
+                        <div class="vacany-info-group">
+                          <div class="es-list-title">Обязанности</div>
+                          <ul class="es-bullet-list">
+                            <li>Принимая во внимание показатели успешности, дальнейшее развитие различных форм
+                              деятельности напрямую зависит от системы массового участия.</li>
+                            <li>Господа, граница обучения кадров обеспечивает актуальность переосмысления политик.</li>
+                            <li>Приятно, граждане, наблюдать, как акционеры крупнейших компаний подвергнуты целой серии
+                              независимых исследований.</li>
+                            <li>Разнообразный и богатый опыт говорит нам, что сложившаяся структура
+                              организации требует
+                              от нас анализа прогресса профессионального сообщества.</li>
+                          </ul>
+                        </div>
+                        <div class="vacany-info-group">
+                          <div class="es-list-title">Требования</div>
+                          <ul class="es-bullet-list">
+                            <li>Высшее техническое образование</li>
+                            <li>Стаж работы по профессии не менее 3 лет</li>
+                            <li>Уверенный пользователь ПК, Знание программного обеспечения 1С Предприятие, уровень
+                              администратор</li>
+                          </ul>
+                        </div>
+                        <div class="vacany-info-group">
+                          <div class="es-list-title">Условия</div>
+                          <ul class="es-bullet-list">
+                            <li>Пятидневный режим рабочего времени (5/2)</li>
+                            <li>Работа в офисе г. Ташкент</li>
+                          </ul>
+                        </div>
+                        <button class="btn es-btn-dark" data-target="#vacancyModal" data-toggle="modal">Подать
+                          заявку</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="es-vacancy">
+                    <div class="card-header" id="headingTwo">
+                      <div class="mb-0">
+                        <button class="btn btn-link btn-block text-left es-vacancy-btn collapsed" type="button"
+                          data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                          aria-controls="collapseTwo">
+                          <span>Название должности</span>
+                          <span class="es-accordion-arrow">
+                            <img src="img/ic_dropdown_white.svg" alt="">
+                          </span>
+                        </button>
+                      </div>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOne">
+                      <div class="card-body">
+                        <div class="vacany-info-group">
+                          <div class="es-list-title">Опыт работы</div>
+                          <ul class="es-bullet-list">
+                            <li>От 1 года до 3 лет</li>
+                            <li>Полная занятость</li>
+                            <li>Полный день</li>
+                          </ul>
+                        </div>
+                        <div class="vacany-info-group">
+                          <div class="es-list-title">Обязанности</div>
+                          <ul class="es-bullet-list">
+                            <li>Принимая во внимание показатели успешности, дальнейшее развитие различных форм
+                              деятельности напрямую зависит от системы массового участия.</li>
+                            <li>Господа, граница обучения кадров обеспечивает актуальность переосмысления политик.</li>
+                            <li>Приятно, граждане, наблюдать, как акционеры крупнейших компаний подвергнуты целой серии
+                              независимых исследований.</li>
+                            <li>Разнообразный и богатый опыт говорит нам, что сложившаяся структура
+                              организации требует
+                              от нас анализа прогресса профессионального сообщества.</li>
+                          </ul>
+                        </div>
+                        <div class="vacany-info-group">
+                          <div class="es-list-title">Требования</div>
+                          <ul class="es-bullet-list">
+                            <li>Высшее техническое образование</li>
+                            <li>Стаж работы по профессии не менее 3 лет</li>
+                            <li>Уверенный пользователь ПК, Знание программного обеспечения 1С Предприятие, уровень
+                              администратор</li>
+                          </ul>
+                        </div>
+                        <div class="vacany-info-group">
+                          <div class="es-list-title">Условия</div>
+                          <ul class="es-bullet-list">
+                            <li>Пятидневный режим рабочего времени (5/2)</li>
+                            <li>Работа в офисе г. Ташкент</li>
+                          </ul>
+                        </div>
+                        <button class="btn es-btn-dark" data-target="#vacancyModal" data-toggle="modal">Подать
+                          заявку</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="es-employee-view">
+              <div class="es-employee-v-img">
+                <img src="img/employee2.jpg" alt="">
+              </div>
+              <div class="es-employee-info">
+                <div class="es-employee-info-part">
+                  <div class="es-employee-v-name">Давыдова Ева</div>
+                  <div class="es-employee-v-role">Разработчик</div>
+                </div>
+                <div class="es-employee-info-part">
+                  <img src="img/ic_medal_employee.svg" alt="">
+                  <p class="es-employee-v-desc">Нет сомнений, что элементы политического процесса будут разоблачены</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="employees-slider-section">
+      <div class="container">
+        <h2 class="ec-section-title">Сотрудники</h2>
+        <div class="employees-slider">
+          <div class="es-employee">
+            <div class="es-employee-img">
+              <a href="#">
+                <img src="img/employee1.jpg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <img class="es-employee-arrow" src="img/ic_down_blue_solid.svg" alt="">
+            <div class="es-employee-name"><a href="#">Рябинин Артём</a></div>
+            <div class="es-employee-role">Аналитик</div>
+          </div>
+          <div class="es-employee">
+            <div class="es-employee-img">
+              <a href="#">
+                <img src="img/employee2.jpg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <img class="es-employee-arrow" src="img/ic_down_blue_solid.svg" alt="">
+            <div class="es-employee-name"><a href="#">Рябинин Артём</a></div>
+            <div class="es-employee-role">Аналитик</div>
+          </div>
+          <div class="es-employee">
+            <div class="es-employee-img">
+              <a href="#">
+                <img src="img/employee1.jpg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <img class="es-employee-arrow" src="img/ic_down_blue_solid.svg" alt="">
+            <div class="es-employee-name"><a href="#">Рябинин Артём</a></div>
+            <div class="es-employee-role">Аналитик</div>
+          </div>
+          <div class="es-employee">
+            <div class="es-employee-img">
+              <a href="#">
+                <img src="img/employee2.jpg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <img class="es-employee-arrow" src="img/ic_down_blue_solid.svg" alt="">
+            <div class="es-employee-name"><a href="#">Рябинин Артём</a></div>
+            <div class="es-employee-role">Аналитик</div>
+          </div>
+          <div class="es-employee">
+            <div class="es-employee-img">
+              <a href="#">
+                <img src="img/employee1.jpg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <img class="es-employee-arrow" src="img/ic_down_blue_solid.svg" alt="">
+            <div class="es-employee-name"><a href="#">Рябинин Артём</a></div>
+            <div class="es-employee-role">Аналитик</div>
+          </div>
+          <div class="es-employee">
+            <div class="es-employee-img">
+              <a href="#">
+                <img src="img/employee1.jpg" class="img-fluid" alt="">
+              </a>
+            </div>
+            <img class="es-employee-arrow" src="img/ic_down_blue_solid.svg" alt="">
+            <div class="es-employee-name"><a href="#">Рябинин Артём</a></div>
+            <div class="es-employee-role">Аналитик</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="es-footer-container">
+          <div class="es-footer-group">
+            <img class="footer-logo" src="img/logo.svg" alt="">
+            <div class="es-footer-info">
+              <div class="es-footer-ic">
+                <img src="img/ic_location.svg" alt="">
+              </div>
+              <div>Адрес: ул. Богибустон, 248, <br> Tashkent 100121</div>
+            </div>
+            <div class="es-footer-socials">
+              <a href="" class="es-footer-ic">
+                <img src="/img/ic_facebook.svg">
+              </a>
+              <a class="es-footer-ic" href="">
+                <img src="/img/ic_linkedin.svg">
+              </a>
+              <a class="es-footer-ic" href="">
+                <img src="/img/ic_instagram.svg">
+              </a>
+            </div>
+          </div>
+          <div class="es-footer-group">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Контакты
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Команда в UD
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Партнерам
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Акции
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Публичная офетра
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-lg-right">
+            <div class="es-phone-label">Телефон</div>
+            <div class="es-phone">
+              <a href="tel:+998 78 150 33 80">+998 78 <span class="es-text-blue">150 33 80</span></a>
+            </div>
+            <div class="es-phone-label">Телефон доставки</div>
+            <div class="es-phone">
+              <a href="tel:+99890 825 26 10">+998 90 <span class="es-text-blue">825 26 10</span></a>
+            </div>
+            <button class="btn ml-lg-auto es-btn-light">На главную</button>
+          </div>
+        </div>
+        <div class="es-footer-bottom">
+          <div class="es-footer-copyright">2023 © UDcompany.uz</div>
+          <div class="es-footer-developer">Сайт разработан в <a href="https://zetta.uz">Zetta Online</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <div class="mobile-nav d-lg-none">
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <img src="/img/ic_main_active.svg">
+          <span class="menu-title">Главная</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img src="/img/ic_menu_mini.svg">
+          <span class="menu-title">Меню</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img src="/img/ic_cart_mini.svg">
+          <span class="badge badge-cart">1</span>
+          <span class="menu-title">Корзина</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <img src="/img/ic_profile_mini.svg">
+          <span class="menu-title">Профиль</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Auth Modal -->
+  <div class="modal fade es-modal-center" id="authModal" tabindex="-1" aria-labelledby="authModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+            <img src="img/ic_close.svg">
+          </button>
+          <div class="modal-logo">
+            <img src="img/logo-dark.svg">
+          </div>
+          <div class="form-group">
+            <label class="es-form-label">Выберите пол</label>
+            <div class="es-gender-options">
+              <label class="radio-label"><input type="radio" name="gender" value="male"> Мужской</label>
+              <label class="radio-label"><input type="radio" name="gender" value="female"> Женский</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Ваше имя">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Дата рождения">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" data-plugin="phone-mask" placeholder="Ваш номер">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Введите код">
+          </div>
+          <a href="#" class="btn es-btn-dark w-100">Далее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Menu Modal -->
+  <div class="modal fade" id="aboutMenuModal" tabindex="-1" aria-labelledby="aboutMenuModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-full">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="es-logo">
+            <img src="img/logo.svg" alt="">
+          </div>
+          <div class="es-mob-nav">
+            <div class="dropdown es-lang-dropdown">
+              <button class="btn dropdown-toggle es-language-dropdown" type="button" id="languageDropdown"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/ic_globe.svg" alt="">
+              </button>
+              <div class="dropdown-menu es-dropdown-menu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item active" href="#">Рус</a>
+                <a class="dropdown-item" href="#">O'zb</a>
+                <a class="dropdown-item" href="#">Eng</a>
+              </div>
+            </div>
+            <!-- <a class="es-search" href="#">
+              <img alt="" src="img/ic_search.svg">
+            </a>
+            <a class="es-favorites" href="#">
+              <img alt="" src="img/ic_heart.svg">
+            </a> -->
+            <button class="btn es-hamburger" data-target="#aboutMenuModal" data-toggle="modal">
+              <img alt="Menu" src="img/ic_close.svg">
+            </button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <button class="btn es-btn-active w-100">На главную</button>
+          <ul class="nav es-mob-cat-list">
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span>Контакты</span><img src="img/ic_cat-link.svg" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span>Команда в UD</span><img src="img/ic_cat-link.svg" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span>Партнерам</span><img src="img/ic_cat-link.svg" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span>Акции</span><img src="img/ic_cat-link.svg" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><span>Публичная офетра</span><img src="img/ic_cat-link.svg" alt=""></a>
+            </li>
+          </ul>
+          <div class="es-modal-contact">
+            <div class="es-phone-label">Телефон</div>
+            <div class="es-phone">
+              <a href="tel:+998 78 150 33 80">+998 78 <span class="es-text-blue">150 33 80</span></a>
+            </div>
+            <div class="es-phone-label">Телефон доставки</div>
+            <div class="es-phone">
+              <a href="tel:+99890 825 26 10">+998 90 <span class="es-text-blue">825 26 10</span></a>
+            </div>
+          </div>
+          <div class="es-footer-info">
+            <div class="es-footer-ic">
+              <img src="img/ic_location-dark.svg" alt="">
+            </div>
+            <div>Адрес: ул. Богибустон, 248, <br> Tashkent 100121</div>
+          </div>
+          <div class="es-footer-socials">
+            <a href="" class="es-footer-ic">
+              <img src="img/ic_facebook-dark.svg">
+            </a>
+            <a class="es-footer-ic" href="">
+              <img src="img/ic_linkedin-dark.svg">
+            </a>
+            <a class="es-footer-ic" href="">
+              <img src="img/ic_instagram-dark.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Partners Modal -->
+  <div class="modal fade es-modal-partners" id="partnersModal" tabindex="-1" aria-labelledby="partnersModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="btn es-close" data-target="#partnersModal" data-toggle="modal">
+            <img alt="" src="img/ic_close.svg">
+          </button>
+          <h2 class="ec-modal-title">Хотите <br class="sm-hide" />
+            с нами <span class="es-text-blue">сотрудничать?</span></h2>
+          <div class="ec-modal-desc"><span class="es-text-blue">Заполните</span> форму коммерческого предложения или
+            <span class="es-text-blue">отправьте</span> свое!
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="partnerform-name">ФИО (указать полностью)</label>
+            <input type="text" id="partnerform-name" class="form-control" name="partnerform[name]"
+              placeholder="Введите">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="partnerform-address">Адрес сайта</label>
+            <input type="text" id="partnerform-address" class="form-control" name="partnerform[address]"
+              placeholder="Введите">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="partnerform-product">Укажите категорию товара</label>
+            <input type="text" id="partnerform-product" class="form-control" name="partnerform[product]"
+              placeholder="Введите">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="partnerform-file">Прикрепите файл</label>
+            <input type="file" id="partnerform-file" class="form-control" name="partnerform[file]"
+              placeholder="Прикрепите файл">
+          </div>
+          <button class="btn es-btn-dark w-100">Отправить</button>
+        </div>
+        <div class="modal-body es-partners-complete-wrapper d-none">
+          <button class="btn es-close" data-target="#partnersModal" data-toggle="modal">
+            <img alt="" src="img/ic_close.svg">
+          </button>
+          <div class="es-partners-complete">
+            <img class="es-ic-succes" src="img/ic_like.svg" alt="">
+            <h2 class="ec-modal-title"><span class="es-text-blue">Спасибо!</span><br>
+              Ваша заявка принята!</h2>
+            <div class="ec-modal-desc">Оператор свяжется с Вами в <span class="es-text-blue">ближайшее время!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vacancy Modal -->
+  <div class="modal fade es-modal-partners" id="vacancyModal" tabindex="-1" aria-labelledby="vacancyModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <button class="btn es-close" data-target="#vacancyModal" data-toggle="modal">
+            <img alt="" src="img/ic_close.svg">
+          </button>
+          <h2 class="ec-modal-title">Хотите <br class="sm-hide" /><span class="es-text-blue">работать</span> у нас?</h2>
+          <div class="ec-modal-desc">
+            <span class="es-text-blue">Заполните</span> форму и отправьте, оператор свяжется с Вами в <span
+              class="es-text-blue">ближайшее время!</span>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="vacancyform-name">ФИО (указать полностью)</label>
+            <input type="text" id="vacancyform-name" class="form-control" name="vacancyform[name]"
+              placeholder="Введите">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="vacancyform-phone">Телефон</label>
+            <input type="text" id="vacancyform-phone" class="form-control" name="vacancyform[phone]"
+              data-plugin="phone-mask" placeholder="Введите">
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="vacancyform-file">Резюме</label>
+            <input type="file" id="vacancyform-file" class="form-control" name="vacancyform[file]"
+              placeholder="Прикрепите файл">
+          </div>
+          <button class="btn es-btn-dark w-100">Отправить</button>
+        </div>
+        <div class="modal-body es-partners-complete-wrapper d-none">
+          <button class="btn es-close" data-target="#vacancyModal" data-toggle="modal">
+            <img alt="" src="img/ic_close.svg">
+          </button>
+          <div class="es-partners-complete">
+            <img class="es-ic-succes" src="img/ic_like.svg" alt="">
+            <h2 class="ec-modal-title"><span class="es-text-blue">Спасибо!</span><br>
+              Ваша заявка принята!</h2>
+            <div class="ec-modal-desc">Оператор свяжется с Вами в <span class="es-text-blue">ближайшее время!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#top" id="back-top">
+    <img alt="To Top" src="img/ic_top.svg" />
+  </a>
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/poper.min.js"></script>
+  <script src="/js/bootstrap.min.js" async></script>
+  <script src="/js/slick.min.js"></script>
+  <script src="/js/jquery.inputmask.bundle.js"></script>
+  <script src="/js/sweet.alert.min.js"></script>
+  <script src="/js/app.js?v=1.0.4"></script>
+</body>
+
+</html>
