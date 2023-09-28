@@ -17,79 +17,72 @@
 </head>
 
 <body>
-  <header class="fixed-top">
-    <nav class="navbar navbar-dark es-navbar es-bg-dark" id="mainNavbar">
+  <header class="main-header fixed-top">
+    <nav class="es-navbar">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img alt="" class="main-logo" src="img/logo.png">
-        </a>
-        <ul class="navbar-nav sm-hide es-nav-pages mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Контакты</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Команда в UD</a>
-          </li>
-        </ul>
-        <div class="es-header-right">
-          <nav class="navbar-expand-lg">
-            <ul class="navbar-nav navbar-icons sm-hide">
-              <li class="nav-item dropdown ml-auto">
-                <button class="btn dropdown-toggle es-language-dropdown" type="button" id="languageDropdown"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Рус
-                </button>
-                <div class="dropdown-menu es-dropdown-menu" aria-labelledby="languageDropdown">
-                  <a class="dropdown-item active" href="#">Рус</a>
-                  <a class="dropdown-item" href="#">O'zb</a>
-                  <a class="dropdown-item" href="#">Eng</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <img src="img/ic_search.svg" alt="">
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  <img src="img/ic_heart.svg" alt="">
-                </a>
-              </li>
-              <li class="nav-item position-relative">
-                <a href="#" class="nav-link">
-                  <img src="img/ic_cart.svg" alt="">
-                  <span class="badge badge-cart">1</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link" data-toggle="modal" data-target="#authModal">
-                  <img src="img/ic_profile.svg" alt="">
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="es-mob-nav">
-          <div class="dropdown es-lang-dropdown">
-            <button class="btn dropdown-toggle es-language-dropdown" type="button" id="languageDropdown"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="img/ic_globe.svg" alt="">
-            </button>
-            <div class="dropdown-menu es-dropdown-menu" aria-labelledby="languageDropdown">
-              <a class="dropdown-item active" href="#">Рус</a>
-              <a class="dropdown-item" href="#">O'zb</a>
-              <a class="dropdown-item" href="#">Eng</a>
-            </div>
+        <div class="es-header">
+          <div class="es-header-left sm-hide">
+            <nav class="navbar-nav">
+              <a href="#" class="es-btn-light">На главную</a>
+            </nav>
           </div>
-          <a class="es-search" href="#">
-            <img alt="" src="/img/ic_search.svg">
-          </a>
-          <a class="es-favorites" href="#">
-            <img alt="" src="/img/ic_heart.svg">
-          </a>
-          <button class="btn es-hamburger" data-target="#menuModal" data-toggle="modal">
-            <img alt="Menu" src="/img/ic_hamburger.svg">
-          </button>
+          <div class="es-header-center">
+            <a href="#" class="navbar-brand es-logo">
+              <img src="img/logo.png" alt="">
+            </a>
+          </div>
+          <div class="es-header-right">
+            <nav class="navbar-expand-lg">
+              <ul class="navbar-nav navbar-icons sm-hide">
+                <li class="nav-item dropdown ml-auto">
+                  <button class="btn dropdown-toggle es-language-dropdown" type="button" id="languageDropdown"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Рус
+                  </button>
+                  <div class="dropdown-menu es-dropdown-menu" aria-labelledby="languageDropdown">
+                    <a class="dropdown-item active" href="#">Рус</a>
+                    <a class="dropdown-item" href="#">O'zb</a>
+                    <a class="dropdown-item" href="#">Eng</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <img src="img/ic_heart.svg" alt="">
+                  </a>
+                </li>
+                <li class="nav-item position-relative">
+                  <a href="#" class="nav-link">
+                    <img src="img/ic_cart.svg" alt="">
+                    <span class="badge badge-cart">1</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link" data-toggle="modal" data-target="#authModal">
+                    <img src="img/ic_profile.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="es-mob-nav">
+            <div class="dropdown es-lang-dropdown">
+              <button class="btn dropdown-toggle es-language-dropdown" type="button" id="languageDropdown"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="img/ic_globe.svg" alt="">
+              </button>
+              <div class="dropdown-menu es-dropdown-menu" aria-labelledby="languageDropdown">
+                <a class="dropdown-item active" href="#">Рус</a>
+                <a class="dropdown-item" href="#">O'zb</a>
+                <a class="dropdown-item" href="#">Eng</a>
+              </div>
+            </div>
+            <a class="es-favorites" href="#">
+              <img alt="" src="/img/ic_heart.svg">
+            </a>
+            <button class="btn es-hamburger" data-target="#menuModal" data-toggle="modal">
+              <img alt="Menu" src="/img/ic_hamburger.svg">
+            </button>
+          </div>
         </div>
       </div>
     </nav>
@@ -114,363 +107,21 @@
         </div>
       </div>
     </section>
-    <!-- <section class="es-about-section">
-      <div class="es-page-row">
-        <div class="container">
-          <div class="es-about-wrapper">
-            <h2 class="ec-section-title">О компании</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="ec-group-title">Мы представляем в Узбекистане всемирно известные бренды. </div>
-                <p class="es-about-desc">
-                  Наши партнёры ценят нашу открытость, надёжность и стабильность. Эти качества позволяют нам быть
-                  интересными и полезными, как для наших поставщиков, так и для наших клиентов. Благодаря этому с каждым
-                  годом увеличивается количество предлагаемых торговых марок, растёт ассортимент продукции и расширяется
-                  круг наших покупателей.
-                  <br><br>
-                  Среди клиентов более 16 000 торговых точек: от крупных торговых сетей до небольших магазинов шаговой
-                  доступности. Филиалы компании расположены в 9 городах Узбекистана.
-                  <br><br>
-                  Среди клиентов более 16 000 торговых точек: от крупных торговых сетей до небольших магазинов шаговой
-                  доступности. Филиалы компании расположены в 9 городах Узбекистана.
-                  <br><br>
-                  Мы выражаем уверенность, что в лице United Distribution вы найдёте надёжного и высокопрофессионального
-                  партнёра.
-                </p>
-                <div class="es-branches-amount">16 000 +</div>
-                <div class="es-branches-title">торговых точек</div>
-              </div>
-              <div class="col-md-6"></div>
-            </div>
-          </div>
-        </div>
-        <div class="es-full-right-half">
-          <div class="es-main-brands-slider">
-            <div class="es-main-brands-slide-wrapper">
-              <div class="es-main-brand-slide">
-                <a href="#">
-                  <img class="img-fluid" src="./img/brend1_logo.png" alt="">
-                </a>
-                <span></span>
-              </div>
-            </div>
-            <div class="es-main-brands-slide-wrapper">
-              <div class="es-main-brand-slide">
-                <a href="#">
-                  <img class="img-fluid" src="./img/brend2_logo.png" alt="">
-                </a>
-                <span></span>
-              </div>
-            </div>
-            <div class="es-main-brands-slide-wrapper">
-              <div class="es-main-brand-slide">
-                <a href="#">
-                  <img class="img-fluid" src="./img/brend1_logo.png" alt="">
-                </a>
-                <span></span>
-              </div>
-            </div>
-            <div class="es-main-brands-slide-wrapper">
-              <div class="es-main-brand-slide">
-                <a href="#">
-                  <img class="img-fluid" src="./img/brend2_logo.png" alt="">
-                </a>
-                <span></span>
-              </div>
-            </div>
-            <div class="es-main-brands-slide-wrapper">
-              <div class="es-main-brand-slide">
-                <a href="#">
-                  <img class="img-fluid" src="./img/brend1_logo.png" alt="">
-                </a>
-                <span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="es-stats-section">
-      <div class="es-page-row">
-        <div class="es-greater-left-half">
-          <img src="img/stats.jpg" alt="">
-        </div>
-        <div class="container">
-          <div class="es-page-row-inner">
-            <div class="es-w-55 sm-hide"></div>
-            <div class="es-w-45">
-              <div class="es-stats-wrapper">
-                <div class="es-section-light-desc">
-                  25 лет успешного существования на рынке Узбекистана, 9 региональных филиалов и более 350 лояльных
-                  сотрудников говорят о том, что мы не собираемся останавливаться на достигнутом.
-                </div>
-                <div class="es-stat-row">
-                  <div class="es-stat-ic">
-                    <img src="img/ic_medal_star.svg" alt="">
-                  </div>
-                  <div class="es-stat-info">
-                    <div class="es-stat-number">25</div>
-                    <div class="es-stat-title">лет на рынке</div>
-                  </div>
-                </div>
-                <div class="es-stat-row">
-                  <div class="es-stat-ic">
-                    <img src="img/ic_shop.svg" alt="">
-                  </div>
-                  <div class="es-stat-info">
-                    <div class="es-stat-number">9</div>
-                    <div class="es-stat-title">региональных
-                      филиалов</div>
-                  </div>
-                </div>
-                <div class="es-stat-row">
-                  <div class="es-stat-ic">
-                    <img src="img/ic_profile_thin.svg" alt="">
-                  </div>
-                  <div class="es-stat-info">
-                    <div class="es-stat-number">350 +</div>
-                    <div class="es-stat-title">сотрудников</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="es-history-section">
-      <div class="container">
-        <div class="es-history-header">
-          <div class="w-50 sm-hide"></div>
-          <h2 class="ec-section-title">История</h2>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="es-years-wrapper">
-              <div class="es-years-circle"></div>
-              <div class="es-static-year">
-                20
-              </div>
-              <div class="es-years-slider">
-                <div>
-                  <div class="es-slick-year"><span>20</span>11</div>
-                </div>
-                <div>
-                  <div class="es-slick-year"><span>20</span>12</div>
-                </div>
-                <div>
-                  <div class="es-slick-year"><span>20</span>13</div>
-                </div>
-                <div>
-                  <div class="es-slick-year"><span>20</span>14</div>
-                </div>
-                <div>
-                  <div class="es-slick-year"><span>20</span>15</div>
-                </div>
-                <div>
-                  <div class="es-slick-year"><span>20</span>16</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="es-history-wrapper">
-              <div class="es-history-slider">
-                <div>
-                  Открытие филиалов в городах: Карши, Наманган
-                </div>
-                <div>
-                  Открытие филиалов в городах: Samarqand
-                </div>
-                <div>
-                  Открытие филиалов в городах: Farg'ona
-                </div>
-                <div>
-                  Открытие филиалов в городах: Namangan
-                </div>
-                <div>
-                  Открытие филиалов в городах: Toshkent
-                </div>
-                <div>
-                  Открытие филиалов в городах: Farg'ona
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="es-partners-section">
-      <div class="es-page-row">
-        <div class="container">
-          <div class="es-page-row">
-            <div class="es-w-45">
-              <div class="es-partners-content">
-                <h2 class="ec-section-title">Партнерам</h2>
-                <div class="es-section-light-desc">
-                  25 лет успешного существования на рынке Узбекистана, 9 региональных филиалов и более 350 лояльных
-                  сотрудников говорят о том, что мы не собираемся останавливаться на достигнутом.
-                </div>
-              </div>
-            </div>
-            <div class="es-w-55"></div>
-          </div>
-        </div>
-        <div class="es-greater-right-half">
-          <img src="img/partners.jpg" alt="">
-          <div class="es-partner-application-block">
-            <div class="es-section-title">Оставьте заявку</div>
-            <p class="es-section-light-desc">
-              Наш менеджер свяжется с Вами в ближайшее время
-            </p>
-            <button class="btn es-btn-light" data-target="#partnersModal" data-toggle="modal">Стать партнером</button>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="es-partners-slider">
-          <div class="es-partner-brand-item-wrapper">
-            <div class="es-partner-item">
-              <img src="./img/brend-slide1.svg" alt="">
-            </div>
-          </div>
-          <div class="es-partner-brand-item-wrapper">
-            <div class="es-partner-item">
-              <img src="./img/brend-slide2.svg" alt="">
-            </div>
-          </div>
-          <div class="es-partner-brand-item-wrapper">
-            <div class="es-partner-item">
-              <img src="./img/brend-slide3.svg" alt="">
-            </div>
-          </div>
-          <div class="es-partner-brand-item-wrapper">
-            <div class="es-partner-item">
-              <img src="./img/brend-slide4.svg" alt="">
-            </div>
-          </div>
-          <div class="es-partner-brand-item-wrapper">
-            <div class="es-partner-item">
-              <img src="./img/brend-slide5.svg" alt="">
-            </div>
-          </div>
-          <div class="es-partner-brand-item-wrapper">
-            <div class="es-partner-item">
-              <img src="./img/brend-slide6.svg" alt="">
-            </div>
-          </div>
-          <div class="es-partner-brand-item-wrapper">
-            <div class="es-partner-item">
-              <img src="./img/brend-slide1.svg" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="es-achivements-section">
-      <div class="container">
-        <h2 class="ec-section-title">Достижения</h2>
-      </div>
-      <div class="es-achivements-slider">
-        <div class="es-achivement-item-wrapper">
-          <div class="es-achivement-item">
-            <div>
-              <div class="es-achivement-stat">350</div>
-              <p class="es-achivement-desc">сотрудников</p>
-            </div>
-            <span></span>
-          </div>
-        </div>
-        <div class="es-achivement-item-wrapper">
-          <div class="es-achivement-item">
-            <div>
-              <div class="es-achivement-stat">95%</div>
-              <p class="es-achivement-desc">покрытия Узбекистана</p>
-            </div>
-            <span></span>
-          </div>
-        </div>
-        <div class="es-achivement-item-wrapper">
-          <div class="es-achivement-item">
-            <div>
-              <div class="es-achivement-stat">9</div>
-              <p class="es-achivement-desc">филиалов по Узбекистану</p>
-            </div>
-            <span></span>
-          </div>
-        </div>
-        <div class="es-achivement-item-wrapper">
-          <div class="es-achivement-item">
-            <div>
-              <div class="es-achivement-stat">350</div>
-              <p class="es-achivement-desc">сотрудников</p>
-            </div>
-            <span></span>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="es-comp-culture-wrapper">
-          <div class="es-comp-culture">
-            <h2 class="ec-section-title">Ценности</h2>
-            <ul class="list-unstyled">
-              <li class="es-culture-item">
-                <div class="es-culture-title">Команда</div>
-                <img src="./img/ic_team.svg" alt="">
-              </li>
-              <li class="es-culture-item">
-                <div class="es-culture-title">Лидерство</div>
-                <img src="./img/ic_leadership.svg" alt="">
-              </li>
-              <li class="es-culture-item">
-                <div class="es-culture-title">Возможности</div>
-                <img src="./img/ic_opportunities.svg" alt="">
-              </li>
-              <li class="es-culture-item">
-                <div class="es-culture-title">Прогрессивность</div>
-                <img src="./img/ic_progress.svg" alt="">
-              </li>
-              <li class="es-culture-item">
-                <div class="es-culture-title">Доверие</div>
-                <img src="./img/ic_belief.svg" alt="">
-              </li>
-              <li class="es-culture-item">
-                <div class="es-culture-title">Традиции</div>
-                <img src="./img/ic_culture.svg" alt="">
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="es-mob-comp-img">
-        <img src="img/main_bg_img.png" alt="">
-      </div>
-    </section> -->
     <footer>
       <div class="container">
         <div class="es-footer-container">
           <div class="es-footer-group">
             <img class="footer-logo" src="img/logo.png" alt="">
-            <div class="es-footer-info">
-              <div class="es-footer-ic">
-                <img src="img/ic_location.svg" alt="">
-              </div>
-              <div>Адрес: ул. Богибустон, 248, <br> Tashkent 100121</div>
-            </div>
-            <div class="es-footer-socials">
-              <a href="" class="es-footer-ic">
-                <img src="/img/ic_facebook.svg">
-              </a>
-              <a class="es-footer-ic" href="">
-                <img src="/img/ic_linkedin.svg">
-              </a>
-              <a class="es-footer-ic" href="">
-                <img src="/img/ic_instagram.svg">
-              </a>
-            </div>
+            <div class="es-footer-desc">Игрушки были частью жизни ребенка на протяжении веков, обеспечивая
+              бесконечные часы игры и воображения</div>
           </div>
           <div class="es-footer-group">
             <ul class="nav flex-column">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  Меню
+                </a>
+              </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
                   Контакты
@@ -478,17 +129,7 @@
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link">
-                  Команда в BT
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  Партнерам
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link">
-                  Акции
+                  О нас
                 </a>
               </li>
               <li class="nav-item">
@@ -503,11 +144,23 @@
             <div class="es-phone">
               <a href="tel:+998 78 150 33 80">+998 78 <span class="es-text-blue">150 33 80</span></a>
             </div>
-            <div class="es-phone-label">Телефон доставки</div>
-            <div class="es-phone">
-              <a href="tel:+99890 825 26 10">+998 90 <span class="es-text-blue">825 26 10</span></a>
+            <div class="es-footer-info">
+              <div>Адрес: ул. Богибустон, 248, <br> Tashkent 100121</div>
+              <div class="es-footer-ic">
+                <img src="img/ic_location.svg" alt="">
+              </div>
             </div>
-            <button class="btn ml-lg-auto es-btn-light">На главную</button>
+            <div class="es-footer-socials">
+              <a href="" class="es-footer-ic">
+                <img src="/img/ic_facebook.svg">
+              </a>
+              <a class="es-footer-ic" href="">
+                <img src="/img/ic_linkedin.svg">
+              </a>
+              <a class="es-footer-ic" href="">
+                <img src="/img/ic_instagram.svg">
+              </a>
+            </div>
           </div>
         </div>
         <div class="es-footer-bottom">
@@ -559,7 +212,7 @@
             <img src="img/ic_close.svg">
           </button>
           <div class="modal-logo">
-            <img src="img/logo-dark.svg">
+            <img src="img/logo.png">
           </div>
           <div class="form-group">
             <label class="es-form-label">Выберите пол</label>
@@ -586,13 +239,13 @@
     </div>
   </div>
 
-  <!-- About Menu Modal -->
-  <div class="modal fade" id="aboutMenuModal" tabindex="-1" aria-labelledby="aboutMenuModalLabel" aria-hidden="true">
+  <!-- Menu Modal -->
+  <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="menuModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-full">
       <div class="modal-content">
         <div class="modal-header">
           <div class="es-logo">
-            <img src="img/logo.svg" alt="">
+            <img src="img/logo.png" alt="">
           </div>
           <div class="es-mob-nav">
             <div class="dropdown es-lang-dropdown">
@@ -606,13 +259,10 @@
                 <a class="dropdown-item" href="#">Eng</a>
               </div>
             </div>
-            <!-- <a class="es-search" href="#">
-              <img alt="" src="img/ic_search.svg">
-            </a>
             <a class="es-favorites" href="#">
               <img alt="" src="img/ic_heart.svg">
-            </a> -->
-            <button class="btn es-hamburger" data-target="#aboutMenuModal" data-toggle="modal">
+            </a>
+            <button class="btn es-hamburger" data-target="#menuModal" data-toggle="modal">
               <img alt="Menu" src="img/ic_close.svg">
             </button>
           </div>
@@ -621,16 +271,13 @@
           <button class="btn es-btn-active w-100">На главную</button>
           <ul class="nav es-mob-cat-list">
             <li class="nav-item">
+              <a href="#" class="nav-link"><span>Меню</span><img src="img/ic_cat-link.svg" alt=""></a>
+            </li>
+            <li class="nav-item">
               <a href="#" class="nav-link"><span>Контакты</span><img src="img/ic_cat-link.svg" alt=""></a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link"><span>Команда в UD</span><img src="img/ic_cat-link.svg" alt=""></a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link"><span>Партнерам</span><img src="img/ic_cat-link.svg" alt=""></a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link"><span>Акции</span><img src="img/ic_cat-link.svg" alt=""></a>
+              <a href="#" class="nav-link"><span>О нас</span><img src="img/ic_cat-link.svg" alt=""></a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link"><span>Публичная офетра</span><img src="img/ic_cat-link.svg" alt=""></a>
@@ -662,58 +309,6 @@
             <a class="es-footer-ic" href="">
               <img src="img/ic_instagram-dark.svg">
             </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- About Partners Modal -->
-  <div class="modal fade es-modal-partners" id="partnersModal" tabindex="-1" aria-labelledby="partnersModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-body">
-          <button class="btn es-close" data-target="#partnersModal" data-toggle="modal">
-            <img alt="" src="img/ic_close.svg">
-          </button>
-          <h2 class="ec-modal-title">Хотите <br class="sm-hide" />
-            с нами <span class="es-text-blue">сотрудничать?</span></h2>
-          <div class="ec-modal-desc"><span class="es-text-blue">Заполните</span> форму коммерческого предложения или
-            <span class="es-text-blue">отправьте</span> свое!
-          </div>
-          <div class="form-group">
-            <label class="control-label" for="partnerform-name">ФИО (указать полностью)</label>
-            <input type="text" id="partnerform-name" class="form-control" name="partnerform[name]"
-              placeholder="Введите">
-          </div>
-          <div class="form-group">
-            <label class="control-label" for="partnerform-address">Адрес сайта</label>
-            <input type="text" id="partnerform-address" class="form-control" name="partnerform[address]"
-              placeholder="Введите">
-          </div>
-          <div class="form-group">
-            <label class="control-label" for="partnerform-product">Укажите категорию товара</label>
-            <input type="text" id="partnerform-product" class="form-control" name="partnerform[product]"
-              placeholder="Введите">
-          </div>
-          <div class="form-group">
-            <label class="control-label" for="partnerform-file">Прикрепите файл</label>
-            <input type="file" id="partnerform-file" class="form-control" name="partnerform[file]"
-              placeholder="Прикрепите файл">
-          </div>
-          <button class="btn es-btn-dark w-100">Отправить</button>
-        </div>
-        <div class="modal-body es-partners-complete-wrapper d-none">
-          <button class="btn es-close" data-target="#partnersModal" data-toggle="modal">
-            <img alt="" src="img/ic_close.svg">
-          </button>
-          <div class="es-partners-complete">
-            <img class="es-ic-succes" src="img/ic_like.svg" alt="">
-            <h2 class="ec-modal-title"><span class="es-text-blue">Спасибо!</span><br>
-              Ваша заявка принята!</h2>
-            <div class="ec-modal-desc">Оператор свяжется с Вами в <span class="es-text-blue">ближайшее время!</span>
-            </div>
           </div>
         </div>
       </div>
